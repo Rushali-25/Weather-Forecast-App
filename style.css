@@ -1,0 +1,120 @@
+/* style.css */
+
+/* Body background customization */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: linear-gradient(to bottom, #eef2f3, #8e9eab);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Weather card shadow effect */
+.weather-card {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Smooth transition for buttons */
+button {
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Center the dropdown */
+#recent-cities {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Error message styling */
+.error-message {
+    font-weight: bold;
+    color: #ff0000;
+    text-align: center;
+}
+/* Animated gradient background */
+body {
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* Weather card styling */
+.weather-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Center weather details */
+.weather-card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.weather-card img {
+    margin: 10px auto;
+}
+/* Buttons with hover animations */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056d2;
+    color: #fff;
+    transform: scale(1.1);
+}
+/* Dropdown styling */
+#recent-cities {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+#recent-cities:hover {
+    border-color: #0078d7;
+}
+/* Error message styling */
+.error-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #d9534f;
+    text-align: center;
+    margin-top: 20px;
+}

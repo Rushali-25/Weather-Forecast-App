@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <script src="app.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto p-4">
+        <h1 class="text-4xl font-bold text-center mb-4">Weather Forecast</h1>
+        <div class="flex justify-center gap-4">
+            <input
+                id="city-input"
+                type="text"
+                placeholder="Enter city name"
+                class="border rounded p-2 w-64"
+            />
+            <button
+                id="search-button"
+                class="bg-blue-500 text-white px-4 py-2 rounded"
+            >
+                Search
+            </button>
+        </div>
+        <div id="weather-display" class="mt-8"></div>
+    </div>
+    <div class="flex justify-center gap-4 mt-4">
+        <button
+            id="location-button"
+            class="bg-green-500 text-white px-4 py-2 rounded"
+        >
+            Use Current Location
+        </button>
+    </div>
+    <div class="flex justify-center mt-4">
+        <select id="recent-cities" class="border rounded p-2">
+            <option value="" disabled selected>Recent Cities</option>
+        </select>
+    </div>
+    <div id="extended-forecast" class="mt-8">
+        <h2 class="text-2xl font-bold text-center mb-4">5-Day Forecast</h2>
+        <div id="forecast-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </div>
+    
+    
+    
+</body>
+</html>
